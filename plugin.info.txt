@@ -1,0 +1,7 @@
+base   actiontest
+author Andreas Gohr
+email  gohr@cosmocode.de
+date   2023-09-02
+name   actiontest plugin
+desc   just testing actons
+url    https://www.dokuwiki.org/plugin:actiontest
