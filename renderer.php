@@ -1,13 +1,13 @@
 <?php
+
 /**
  * DokuWiki Plugin actiontest (Renderer Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
- * @author  Andreas Gohr <gohr@cosmocode.de>
+ * @author Andreas Gohr <gohr@cosmocode.de>
  */
 class renderer_plugin_actiontest extends Doku_Renderer
 {
-
     /** @inheritDoc */
     public function getFormat()
     {
@@ -16,4 +16,3 @@ class renderer_plugin_actiontest extends Doku_Renderer
 
     // FIXME implement all methods of Doku_Renderer here
 }
-

@@ -1,13 +1,15 @@
 <?php
+
+use dokuwiki\Extension\AuthPlugin;
+
 /**
  * DokuWiki Plugin actiontest (Auth Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
- * @author  Andreas Gohr <gohr@cosmocode.de>
+ * @author Andreas Gohr <gohr@cosmocode.de>
  */
-class auth_plugin_actiontest extends \dokuwiki\Extension\AuthPlugin
+class auth_plugin_actiontest extends AuthPlugin
 {
-
     /** @inheritDoc */
     public function __construct()
     {
@@ -30,7 +32,6 @@ class auth_plugin_actiontest extends \dokuwiki\Extension\AuthPlugin
         // FIXME intialize your auth system and set success to true, if successful
         $this->success = true;
     }
-
 
     /** @inheritDoc */
     // public function logOff()
@@ -69,7 +70,7 @@ class auth_plugin_actiontest extends \dokuwiki\Extension\AuthPlugin
     }
 
     /** @inheritDoc */
-    public function getUserData($user, $requireGroups=true)
+    public function getUserData($user, $requireGroups = true)
     {
         /*
         FIXME implement and return something like this
@@ -156,4 +157,3 @@ class auth_plugin_actiontest extends \dokuwiki\Extension\AuthPlugin
       // FIXME implement
     //}
 }
-

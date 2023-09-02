@@ -1,11 +1,14 @@
 <?php
+
+use dokuwiki\Extension\SyntaxPlugin;
+
 /**
  * DokuWiki Plugin actiontest (Syntax Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
- * @author  Andreas Gohr <gohr@cosmocode.de>
+ * @author Andreas Gohr <gohr@cosmocode.de>
  */
-class syntax_plugin_actiontest extends \dokuwiki\Extension\SyntaxPlugin
+class syntax_plugin_actiontest extends SyntaxPlugin
 {
     /** @inheritDoc */
     public function getType()
@@ -41,7 +44,7 @@ class syntax_plugin_actiontest extends \dokuwiki\Extension\SyntaxPlugin
     /** @inheritDoc */
     public function handle($match, $state, $pos, Doku_Handler $handler)
     {
-        $data = array();
+        $data = [];
 
         return $data;
     }
@@ -56,4 +59,3 @@ class syntax_plugin_actiontest extends \dokuwiki\Extension\SyntaxPlugin
         return true;
     }
 }
-

@@ -1,13 +1,16 @@
 <?php
+
+use dokuwiki\Extension\RemotePlugin;
+use dokuwiki\Remote\AccessDeniedException;
+
 /**
  * DokuWiki Plugin actiontest (Action Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
- * @author  Andreas Gohr <gohr@cosmocode.de>
+ * @author Andreas Gohr <gohr@cosmocode.de>
  */
-class remote_plugin_actiontest extends \dokuwiki\Extension\RemotePlugin
+class remote_plugin_actiontest extends RemotePlugin
 {
-
     /**
      * Example function
      *
@@ -18,10 +21,9 @@ class remote_plugin_actiontest extends \dokuwiki\Extension\RemotePlugin
         // FIXME handle security in your method!
         $id = cleanID($id);
         if (auth_quickaclcheck($id) < AUTH_READ) {
-            throw new RemoteAccessDeniedException('You are not allowed to read this file', 111);
+            throw new AccessDeniedException('You are not allowed to read this file', 111);
         }
 
         return 'example';
     }
 }
-

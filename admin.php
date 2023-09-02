@@ -1,13 +1,15 @@
 <?php
+
+use dokuwiki\Extension\AdminPlugin;
+
 /**
  * DokuWiki Plugin actiontest (Admin Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
- * @author  Andreas Gohr <gohr@cosmocode.de>
+ * @author Andreas Gohr <gohr@cosmocode.de>
  */
-class admin_plugin_actiontest extends \dokuwiki\Extension\AdminPlugin
+class admin_plugin_actiontest extends AdminPlugin
 {
-
     /** @inheritDoc */
     public function handle()
     {
@@ -21,4 +23,3 @@ class admin_plugin_actiontest extends \dokuwiki\Extension\AdminPlugin
         echo '<h1>' . $this->getLang('menu') . '</h1>';
     }
 }
-
