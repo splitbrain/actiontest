@@ -10,4 +10,4 @@ permissions: write-all
 
 jobs:
   all:
-    uses: dokuwiki/github-action/.github/workflows/all.yml@devel
+    uses: dokuwiki/github-action/.github/workflows/all.yml@734bb7fcdc0f7ad1584e65d2fc8bc368127b20f7
