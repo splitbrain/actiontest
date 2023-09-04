@@ -5,3 +5,5 @@ date   2023-09-02
 name   actiontest plugin
 desc   just testing actons
 url    https://www.dokuwiki.org/plugin:actiontest
+minphp 7.4
+maxphp 8.1
