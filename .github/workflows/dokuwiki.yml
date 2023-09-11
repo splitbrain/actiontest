@@ -5,7 +5,6 @@ on:
   schedule:
     - cron: '25 3 21 * *'
 
-
 permissions: write-all
 
 jobs:
