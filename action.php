@@ -16,7 +16,6 @@ class action_plugin_actiontest extends ActionPlugin
     public function register(EventHandler $controller)
     {
         $controller->register_hook('EXAMPLE_EVENT', 'AFTER|BEFORE', $this, 'handleExampleEvent');
-
     }
 
 
@@ -31,5 +30,4 @@ class action_plugin_actiontest extends ActionPlugin
     public function handleExampleEvent(Event $event, $param)
     {
     }
-
 }
