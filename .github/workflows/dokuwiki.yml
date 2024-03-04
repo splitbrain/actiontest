@@ -9,4 +9,4 @@ permissions: write-all
 
 jobs:
   all:
-    uses: dokuwiki/github-action/.github/workflows/all.yml@kaos
+    uses: dokuwiki/github-action/.github/workflows/all.yml@usecomposer
